@@ -1,0 +1,32 @@
+#one {
+    width: 30%;
+}
+
+#btn {
+    margin-top: 2%;
+    background-color: rgb(54, 109, 209);
+    color: white;
+    width: 15%;
+    border-radius: 7%;
+}
+
+#description {
+    margin-top: 2%;
+    color: rgb(18, 79, 191);
+    font-size: large;
+}
+
+.form {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+#account {
+    margin-top: 2%;
+    color: rgb(18, 79, 191);
+    font-size: large;
+}
+.p{
+    color: rgb(18, 79, 191);
+    font-size:xx-large;
+}

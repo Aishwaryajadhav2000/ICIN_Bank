@@ -1,0 +1,15 @@
+.row{
+    color: blue;
+    font-size: larger;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1%;
+    font-weight: bold;
+}
+.col-3{
+    text-align: end;
+}
+.col-8{
+    text-align: center;
+  
+}

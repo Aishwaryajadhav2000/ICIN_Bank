@@ -1,0 +1,106 @@
+<header class="header">
+    <h2 class="label"><b><i>Sign Up</i></b></h2>
+</header>
+<hr>
+
+<content style="text-align: center;">
+
+    <div class="card">
+
+
+        <form [formGroup]="register" (ngSubmit)="submit()">
+
+            <div class="form-row" id="alform">
+                <div class="col-md-12 mb-10">
+                    <label class="label"><b>First Name</b></label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Firstname" formControlName="firstname">
+
+                    </div>
+                </div>
+<br>
+                <div class="col-md-12 mb-10">
+                    <label class="label"><b>Last Name</b></label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Lastname" formControlName="lastname">
+
+                    </div>
+                </div>
+                <br>
+
+                <div class="col-md-12 mb-10">
+                    <label class="label"><b>Phone</b></label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Phone" formControlName="contactno">
+
+                    </div>
+                </div>
+                <br>
+
+                <div class="col-md-12 mb-10">
+                    <label class="label"><b>Your Email</b></label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="email" formControlName="useremailid">
+
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-12 mb-10">
+                    <label class="label"><b>User Name</b></label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Username" formControlName="username">
+
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-12 mb-10">
+                    <label class="label"><b>Password</b></label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="password" formControlName="password">
+
+                    </div>
+                </div>
+                <br>
+            </div>
+
+
+
+
+
+
+
+
+
+            <hr>
+
+            <button class="reg" type="submit">Sign up !</button>
+
+
+        </form>
+
+
+
+
+
+
+    </div>
+
+</content>

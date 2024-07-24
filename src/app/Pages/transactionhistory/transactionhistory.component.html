@@ -1,0 +1,33 @@
+
+<app-userheading></app-userheading>
+<br>
+
+
+
+<div style="text-align: center; font-weight: bold; color: rgb(94, 94, 220);">
+    <h3>Transaction History!</h3>
+</div>
+<br>
+<div>
+    <table style="width:100%;  border:1px solid black">
+        <tr style="width:100%;  border:1px solid black">
+            
+            <th>Account Type</th>
+            <th>Amount</th>
+            <th>Account No</th>
+            <th>Transaction type</th>
+           
+           
+           
+        </tr>
+        <tr style="width:100%;  border:1px solid black" *ngFor="let data of alldata">
+            
+            <td>{{data.accounttype}}</td>
+            <td>{{data.amount}}</td>
+            <td>{{data.accountno}}</td>
+            <td>{{data.transactiontype}}</td>
+            
+           
+        </tr>
+    </table>
+</div>

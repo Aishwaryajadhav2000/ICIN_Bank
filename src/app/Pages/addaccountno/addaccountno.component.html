@@ -1,0 +1,57 @@
+<app-adminheading></app-adminheading>
+<br>
+<hr>
+<div class="page">
+    <div class="heading">
+        <p>Create Acoount No for Users</p>
+    </div>
+</div>
+<br>
+<div>
+    <table style="width:100%;  border:1px solid black">
+        <tr style="width:100%;  border:1px solid black">
+            <th>User Id</th>
+            <th>User Name</th>
+            <th>Contact No</th>
+            <th>Primary Account</th>
+            <th>Savings Account?</th>
+            <th>Action</th>
+           
+           
+        </tr>
+        <!-- <tr style="width:100%;  border:1px solid black" *ngFor="let data of alldata">
+            <td>1</td>
+            <td  >{{data.firstname}} {{ data.lastname}}</td>
+            <td>{{data.contactno}}</td>
+            <td>
+                <div><input [(ngModel)]="accountno.primaryaccountno"></div>
+                
+            </td>
+            <td>
+                <div><input [(ngModel)]="accountno.savingsaccountno"></div>
+            </td>
+            <td (click)="create(data.username)"><button>create</button></td>
+           
+        </tr> -->
+        <tr style="width:100%;  border:1px solid black" *ngFor="let data of alldata"  [formGroup]="register">
+            <td>{{data.userid}}</td>
+            <td  >{{data.firstname}} {{ data.lastname}}</td>
+            <td>{{data.contactno}}</td>
+           
+            <td>
+                <!-- <div><input formControlName="primaryaccountno"></div> -->
+                {{data.primaryaccountno}}
+            </td>
+            <td>{{data.savingsaccountno}}
+                <!-- <div><input formControlName="savingsaccountno"></div> -->
+            </td>
+            <td ><button (click)="create(data.userid)">create</button></td>
+           
+        </tr>
+    </table>
+</div>
+   
+
+
+
+<br>

@@ -1,0 +1,48 @@
+<app-userheading></app-userheading>
+
+
+<div>
+    <form>
+        <div class="form" [formGroup]="checkbookrequest">
+            <div>
+                <p class="p"><b>Request New Cheque Book</b></p>
+            </div>
+
+            <div id="account">
+                <label><b>Pick an Account :</b></label>
+                <br>
+                <div>
+                    <select id="one" [(ngModel)]="requests.accounttype" [ngModelOptions]="{standalone: true}">
+                        <option value="primary">Primary</option>
+                        <option value="savings">Savings</option>
+                    </select>
+                </div><br>
+            </div>
+
+         <!-- <div class="row">
+            <div class="col-3">
+                <button (click)="check()">Check Account no</button>
+            </div>
+            <div class="col">
+                <div *ngIf="finalaccountno">
+                    <input formControlName="accountnoo" value="{{finalaccountno}}" >
+                </div>
+            </div>
+         </div> -->
+
+            <div id="description">
+                <label><b>Description :</b></label>
+                <br>
+                <div>
+                    <input id="one" [(ngModel)]="requests.description" [ngModelOptions]="{standalone: true}">
+                </div>
+
+            </div>
+
+            <div>
+                <button id="btn" (click)="submitrequest()">Submit Request</button>
+            </div>
+
+        </div>
+    </form>
+</div>

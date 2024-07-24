@@ -1,0 +1,43 @@
+<div class="card" id="card">
+    <div class="row">
+        <div class="col" (click)="home()">
+            Home
+        </div>
+
+        <div class="col" (click)="icin()">
+            About ICIN
+        </div>
+
+        <a class="col" href="transfermoney">
+            Transfer
+        </a>
+
+        <div class="col" (click)="request()">
+            Request
+        </div>
+
+        <div class="col" >
+            <a  href="userprofile">Profile</a>
+            
+        </div>
+
+        <div class="col" >
+            <a href="">
+                Logout
+            </a>
+            
+        </div>
+
+
+        <!-- <div class="col">
+            <div [formGroup]="selectany" (ngSubmit)="submit()">
+                <select name="Me" id="me"  formControlName="select" (click)="new()">
+                    <option  value="profile"  (click)="userprofile()">Profile</option>
+                    <option value="logout">Logout</option>
+                </select>
+            </div>
+        </div> -->
+        
+
+    </div>
+</div>

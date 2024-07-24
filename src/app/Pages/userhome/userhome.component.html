@@ -1,0 +1,131 @@
+
+<app-userheading></app-userheading>
+<br>
+
+<div id="divs">
+    <div class="row" id="one" >
+        <div class="col-4" id="divs">
+            <div class="card">
+                <div id="primary">
+
+                    <div class="row">
+                        <div class="col-7">
+                            <h3>
+                                Primary Balance :
+                            </h3>
+                        </div>
+                        <div class="col">
+                            $ {{primary}}
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+                <div class="row" id="primar">
+
+                    <div class="col" id="details">
+                        <a href="transactionhistory">View Details</a>
+                    </div>
+
+                    <div class="col">
+                        <small>
+                            <mat-icon>arrow_right_alt</mat-icon>
+                        </small>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card">
+                <div class="row">
+                    <div class="col">
+                        <mat-icon>credit_card</mat-icon>
+                    </div>
+                    <div class="col">
+                        <small>Deposit</small>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <a href="withdrawl">Go to Deposite</a>
+                    </div>
+                    <div class="col">
+                        <small>
+                            <mat-icon>arrow_right_alt</mat-icon>
+                        </small>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="row">
+                    <div class="col">
+                        <mat-icon>account_balance</mat-icon>
+                    </div>
+                    <div class="col">
+                        <small>Withdraw</small>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <a href="withdrawl">Go to WithDrawal</a>
+                    </div>
+                    <div class="col">
+                        <small>
+                            <mat-icon>arrow_right_alt</mat-icon>
+                        </small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row" id="two">
+        <div class="col-4">
+            <div class="card">
+                <div id="savings">
+
+                    <div class="row">
+                        <div class="col-7">
+                            <h3>
+                                Savings Balance :
+                            </h3>
+                        </div>
+                        <div class="col">
+                            $ {{savings}}
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+                <!-- <hr> -->
+                <div class="row">
+
+                    <div class="col">
+                        <a href="transactionhistory">View Details</a>
+                    </div>
+
+                    <div class="col">
+                        <small>
+                            <mat-icon>arrow_right_alt</mat-icon>
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

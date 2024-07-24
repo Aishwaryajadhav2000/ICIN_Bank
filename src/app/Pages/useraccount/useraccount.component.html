@@ -1,0 +1,34 @@
+<app-adminheading></app-adminheading>
+<br>
+<hr>
+<div class="page">
+    <div class="heading">
+        <p>User Account Page</p>
+    </div>
+</div>
+<br>
+<table style="width:100%;  border:1px solid black">
+    <tr style="width:100%;  border:1px solid black">
+        <th>User Name</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Primary Account</th>
+        <th>Savings Account</th>     
+        <th>Action</th>
+       
+    </tr>
+    <tr style="width:100%;  border:1px solid black" *ngFor="let data of data">
+        <td>{{data.username}}</td>
+        <td>{{data.firstname}}</td>
+        <td>{{data.lastname}}</td>
+        <td>{{data.useremailid}}</td>
+        <td>{{data.contactno}}</td>
+        <td>Name</td>
+        <td>Name</td>
+        <td><button>Disabled</button></td>
+    </tr>
+</table>
+
+<br>

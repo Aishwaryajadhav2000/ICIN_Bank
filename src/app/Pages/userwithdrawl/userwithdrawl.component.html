@@ -1,0 +1,79 @@
+<app-userheading></app-userheading>
+<br>
+
+<div style="margin-left: 15%; color: rgb(94, 94, 220);">
+    <h3>Request for a Deposite</h3>
+</div>
+
+<content>
+    <div class="card">
+        <form [formGroup]="deposite" (ngSubmit)="submit()">
+            <div>
+                <div class="row">
+                    <div class="col-6">
+                        <label>Select Account Type</label>
+
+                    </div>
+                    <div class="col">
+                        <select name="accounttype" formControlName="accounttype">
+                            <option value="primary"> Primary </option>
+                            <option value="savings"> Saving </option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-5">
+                        Add Amount
+                    </div>
+                    <div class="col">
+                        <input formControlName="amount">
+                    </div>
+
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="col-5">
+                        Add Account No
+                    </div>
+                    <div class="col">
+                        <input formControlName="accountno">
+                    </div>
+
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-5">
+                        IFSC code
+                    </div>
+                    <div class="col">
+                        <input>
+                    </div>
+
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-5">
+                        Add nick name
+                    </div>
+                    <div class="col">
+                        <input>
+                    </div>
+
+                </div>
+<br>
+                <div class="row">
+                    
+                    <div class="col-6">
+                        <button>Request For Deposite</button>
+                    </div>
+                    
+                </div>
+
+                
+
+            </div>
+        </form>
+    </div>
+</content>

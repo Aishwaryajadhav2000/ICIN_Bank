@@ -1,0 +1,32 @@
+<app-adminheading></app-adminheading>
+<br>
+<hr>
+<div class="page">
+    <div class="heading">
+        <p>Cheque Book Request</p>
+    </div>
+</div>
+<br>
+<table style="width:100%;  border:1px solid black">
+    <tr style="width:100%;  border:1px solid black">
+        <th>User Id</th>
+        <th>User Name</th>
+        <th>Account</th>
+        <th>Description</th>
+        <th>Status?</th>
+        <th>Action</th>
+       
+       
+    </tr>
+    <tr style="width:100%;  border:1px solid black" *ngFor="let data of data">
+        <td></td>
+        <td>{{data.username}}</td>
+        <td>{{data.accounttype}}</td>
+        <td>{{data.description}}</td>
+        <td>Pending</td>
+        <td><button>confirm</button></td>
+       
+    </tr>
+</table>
+
+<br>
